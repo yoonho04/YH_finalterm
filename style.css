@@ -1,0 +1,38 @@
+title {
+  color: rgb(130, 233, 99);
+  font-size: 45px;
+  font-weight: bold;
+}
+.logo {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.navbar {
+  background-color: rgb(130, 233, 99);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+.navbar li {
+  color: rgb(68, 142, 192);
+  font-size: 20px;
+}
+header {
+  background-color: rgb(68, 142, 192);
+  padding: 10px;
+  text-align: center;
+  color: rgb(236, 236, 236);
+}
