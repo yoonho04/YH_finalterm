@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Final Term</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: 'Noto Sans KR', sans-serif;
+        background-color: #f8fdfb;
+        color: #333;
+      }
+
+      /* 네비게이션 바 */
+      nav {
+        background-color: #5c2d91;
+        display: flex;
+        justify-content: center;
+        padding: 14px 0;
+        gap: 40px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: color 0.3s;
+      }
+      nav a:hover {
+        color: #ffd740;
+      }
+
+      .icon {
+        font-size: 20px;
+        margin-bottom: 4px;
+      }
+
+      /* 메인 콘텐츠 */
+      .container {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 20px;
+      }
+
+      .title {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .title h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .title p {
+        font-size: 16px;
+        color: #888;
+      }
+
+      /* 카드 박스 */
+      .card {
+        background-color: #ecfff0;
+        border-left: 6px solid #4caf50;
+        padding: 24px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      .card h2 {
+        margin-top: 0;
+        color: #2e7d32;
+      }
+
+      .ai-tools img {
+        width: 60px;
+        margin: 12px 10px 0 0;
+        vertical-align: middle;
+        border-radius: 6px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 네비게이션 -->
+    <nav>
+      <a href="#"><span class="icon">🏠</span>HOME</a>
+      <a href="#"><span class="icon">👨‍💻</span>PROGRAMERS</a>
+      <a href="#"><span class="icon">👥</span>TEAMPAGE</a>
+      <a href="#"><span class="icon">📝</span>TODO-LIST</a>
+    </nav>
+
+    <!-- 메인 콘텐츠 -->
+    <div class="container">
+      <div class="title">
+        <h1>Final term</h1>
+        <p>웹프로그래밍 기말 프로젝트</p>
+      </div>
+
+      <div class="card">
+        <h2>📌 기말프로젝트 목표!</h2>
+        <p>
+          자신의 포트폴리오를 잘 정리합니다.<br />
+          팀프로젝트를 종합발표, 기말발표 홈페이지가 자신의 GitHub 계정에
+          등록되어 있고 deploy도 직접 해서 프로젝트 저장소에 웹주소가 등록되어야
+          합니다.<br />
+          팀프로젝트의 팀원들에 대해서 소개하는 페이지를 준비합니다. 프로젝트를
+          소개 시 자신이 직접 deploy 한 주소(간편한 기말발표 주소)를 사용합니다.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>🤖 홈페이지 제작에 도움을 준 AI</h2>
+        <p>Chat GPT, perplexity</p>
+        <div class="ai-tools">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg"
+            alt="ChatGPT"
+          />
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/645e57b75eb4cd2d72bbf5bd/1683872641991-V9T3RQE9XLSV5GVMMEY6/perplexity.png"
+            alt="Perplexity"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
