@@ -5,20 +5,46 @@
 body {
   margin: 0;
   font-family: 'Noto Sans KR', sans-serif;
-  background-color: #f0f4f8; /* 기존 #f8fdfb → 변경 */
+  background-color: #000000; /* 기존 #f8fdfb → 변경 */
   color: #333;
 }
-/* 네비게이션 바 */
+.name-banner {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #876dce;
+  padding: 20px 0 10px;
+  background-color: #ffffff;
+}
 nav {
   background-color: #ffffff;
   display: flex;
-  justify-content: center;
-  padding: 14px 0;
-  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-nav a {
-  color: #4a148c;
+
+/* 왼쪽 GitHub 링크 */
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.github-link img {  
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+/* 오른쪽 메뉴들 */
+.nav-right {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-right a {
+  color: #876dce;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
@@ -27,9 +53,11 @@ nav a {
   align-items: center;
   transition: color 0.3s;
 }
-nav a:hover {
-  color: #ff6f00; /* hover 시 오렌지 컬러 */
+
+.nav-right a:hover {
+  color: #ff6f00;
 }
+
 .icon {
   font-size: 22px;
   margin-bottom: 4px;
@@ -202,7 +230,7 @@ h1 {
 
 .member {
   background-color: #ffffff;
-  color: #4a148c;
+  color: #876dce;
   font-weight: bold;
   text-align: center;
   padding: 12px 20px;
@@ -223,7 +251,7 @@ h1 {
 .main-header h1 {
   font-size: 2.8rem;
   font-weight: bold;
-  color: #008585;
+  color: #cecece;
   letter-spacing: 2px;
 }
 .subtitle {
