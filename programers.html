@@ -1,79 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Final term</title>
-    </head>
-    <body>
-  
-     <!-- 이름 표시 (네비게이션 바 위) -->
+  </head>
+  <body>
+    <!-- 이름 표시 (네비게이션 바 위) -->
     <div class="name-banner">김윤호</div>
-    
-   <nav>    
-    <div class="nav-left">
+
+    <nav>
+      <div class="nav-left">
         <a
-        href="https://github.com/your-github-id"
-        target="_blank"
-        class="github-link"
-        title="GitHub로 이동"
+          href="https://github.com/your-github-id"
+          target="_blank"
+          class="github-link"
+          title="GitHub로 이동"
         >
-        <img
-        src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-        alt="GitHub"
-        />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            alt="GitHub"
+          />
         </a>
-    </div>
-    <!-- 네비게이션 -->
-    <div class="nav-right">
+      </div>
+      <!-- 네비게이션 -->
+      <div class="nav-right">
         <a href="index.html"><span class="icon">🏠</span>HOME</a>
         <a href="programers.html"><span class="icon">👨‍💻</span>PROGRAMERS</a>
         <a href="teampage.html"><span class="icon">👥</span>TEAMPAGE</a>
         <a href="todo-list.html"><span class="icon">📝</span>TODO-LIST</a>
+        <a href="history.html"><span class="icon">📜</span>HISTORY</a>
+      </div>
     </nav>
 
     <div class="main-header">
-    <h1>Programmers</h1>
-    <p class="subtitle">기초실력 다지기 프로젝트</p>
+      <h1>Programmers</h1>
+      <p class="subtitle">기초실력 다지기 프로젝트</p>
     </div>
     <div class="content-section">
-    <a
+      <a
         href="https://school.programmers.co.kr/learn/challenges?order=acceptance_desc"
         ><img
-        class="programers-logo"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzTRZU_YMy6CZqeuzKacLvZoERQoAIrGj3Ng&s"
-        alt="프로그래머스 로고"
-    /></a>
-    <br />
-    <a
+          class="programers-logo"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzTRZU_YMy6CZqeuzKacLvZoERQoAIrGj3Ng&s"
+          alt="프로그래머스 로고"
+      /></a>
+      <br />
+      <a
         href="https://school.programmers.co.kr/learn/challenges?order=acceptance_desc"
         class="main-link"
         >프로그래머스</a
-    >
-    <span class="desc"
+      >
+      <span class="desc"
         >*위의 사진 또는 문자를 누르면 사이트로 이동합니다*</span
-    >
+      >
     </div>
 
     <div class="description">
-        여러 프로그래밍 언어를 지원하고 자신이 배운 언어를 창의적으로 문제를 해결하는 능력을 키울 수 있습니다.
-        코딩의 기초를 다지며 실력을 향상시킬 수 있습니다. <br>
-        문제는 <strong>676개</strong>가 있으며, 난이도는 <strong>Lv.1부터 Lv.5까지</strong> 있습니다. <br>
-        다양한 프로그래밍 언어를 지원하여 새로운 언어의 접근이 쉬워지고,
-        다른 사람들과의 문제 풀이를 공유하여 나와 다른 답을 배울 수 있습니다.
-      </div>
-    
-    <div class="score-section">
-        <h1> 나의 성적 보기 </h1><br>
-        <button id="showBtn">사진 보기</button>
-    <img id="myImage" src="이미지_주소.jpg" style="display:none; margin-top:10px;" alt="프로그래머스 성적이미지x`">
-
-     <script>
-    document.getElementById('showBtn').addEventListener('click', function() {
-        document.getElementById('myImage').style.display = 'block';
-    }); 
-     </script>
+      여러 프로그래밍 언어를 지원하고 자신이 배운 언어를 창의적으로 문제를
+      해결하는 능력을 키울 수 있습니다. 코딩의 기초를 다지며 실력을 향상시킬 수
+      있습니다. <br />
+      문제는 <strong>676개</strong>가 있으며, 난이도는
+      <strong>Lv.1부터 Lv.5까지</strong> 있습니다. <br />
+      다양한 프로그래밍 언어를 지원하여 새로운 언어의 접근이 쉬워지고, 다른
+      사람들과의 문제 풀이를 공유하여 나와 다른 답을 배울 수 있습니다.
     </div>
-</body>
+
+    <div class="score-section">
+      <h1>나의 성적 보기</h1>
+      <br />
+      <button id="showBtn">사진 보기</button>
+      <img
+        id="myImage"
+        src="이미지_주소.jpg"
+        style="display: none; margin-top: 10px"
+        alt="프로그래머스 성적이미지x`"
+      />
+
+      <script>
+        document
+          .getElementById('showBtn')
+          .addEventListener('click', function () {
+            document.getElementById('myImage').style.display = 'block'
+          })
+      </script>
+    </div>
+  </body>
 </html>
