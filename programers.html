@@ -7,12 +7,12 @@
     <title>Final term</title>
     </head>
     <body>
-    <nav>
-    <!-- 이름 표시 (네비게이션 바 위) -->
+  
+     <!-- 이름 표시 (네비게이션 바 위) -->
     <div class="name-banner">김윤호</div>
     
-    <!-- GitHub 링크 -->
-        <div class="nav-left">
+   <nav>    
+    <div class="nav-left">
         <a
         href="https://github.com/your-github-id"
         target="_blank"
@@ -32,7 +32,6 @@
         <a href="teampage.html"><span class="icon">👥</span>TEAMPAGE</a>
         <a href="todo-list.html"><span class="icon">📝</span>TODO-LIST</a>
     </nav>
-
 
     <div class="main-header">
     <h1>Programmers</h1>
@@ -57,15 +56,24 @@
     >
     </div>
 
-    <p class="description">
-    여러 프로그래밍 언어를 지원하고 자신이 배운 언어를 창의적으로 문제를
-    해결하는 능력을 키울 수 있습니다. 코딩의 기초를 다지며 실력을 향상시킬 수
-    있습니다. <br />
-    문제는 676개가 있으며, 난이도는 Lv.1부터 Lv.5까지 있습니다.
-    <br />
-    다양한 프로그래밍 언어를 지원하여 새로운 언어의 접근이 쉬워지고,
-    다른사람들과의 문제 풀이를 공유하여 나와 다른 답을 배울 수 있습니다.
-    <br />
-    </p>
+    <div class="description">
+        여러 프로그래밍 언어를 지원하고 자신이 배운 언어를 창의적으로 문제를 해결하는 능력을 키울 수 있습니다.
+        코딩의 기초를 다지며 실력을 향상시킬 수 있습니다. <br>
+        문제는 <strong>676개</strong>가 있으며, 난이도는 <strong>Lv.1부터 Lv.5까지</strong> 있습니다. <br>
+        다양한 프로그래밍 언어를 지원하여 새로운 언어의 접근이 쉬워지고,
+        다른 사람들과의 문제 풀이를 공유하여 나와 다른 답을 배울 수 있습니다.
+      </div>
+    
+    <div class="score-section">
+        <h1> 나의 성적 보기 </h1><br>
+        <button id="showBtn">사진 보기</button>
+    <img id="myImage" src="이미지_주소.jpg" style="display:none; margin-top:10px;" alt="프로그래머스 성적이미지x`">
+
+     <script>
+    document.getElementById('showBtn').addEventListener('click', function() {
+        document.getElementById('myImage').style.display = 'block';
+    }); 
+     </script>
+    </div>
 </body>
 </html>

@@ -5,11 +5,12 @@
 body {
   margin: 0;
   font-family: 'Noto Sans KR', sans-serif;
-  background-color: #000000; /* 기존 #f8fdfb → 변경 */
+  background-color: #8f7878; /* 기존 #f8fdfb → 변경 */
   color: #333;
 }
 .name-banner {
   text-align: center;
+  /* Ensure proper syntax with a semicolon */
   font-size: 26px;
   font-weight: bold;
   color: #876dce;
@@ -31,7 +32,7 @@ nav {
   align-items: center;
 }
 
-.github-link img {  
+.github-link img {
   width: 24px;
   height: 24px;
   vertical-align: middle;
@@ -78,11 +79,11 @@ nav {
 .title h1 {
   font-size: 36px;
   margin-bottom: 10px;
-  color: #333;
+  color: #cecece;
 }
 .title p {
   font-size: 16px;
-  color: #888;
+  color: #cecece;
 }
 
 /* 카드 박스 */
@@ -105,7 +106,7 @@ nav {
   margin: 12px 10px 0 0;
   vertical-align: middle;
   border-radius: 6px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 .section {
@@ -360,4 +361,28 @@ header {
   text-align: center;
   color: rgb(236, 236, 236);
 }
->>>>>>> 90108f401e83d089ce4157757dec026d6fe83c4f
+.description {
+  background-color: #e9fdf1;
+  border-left: 6px solid #34a853;
+  border-radius: 10px;
+  padding: 20px 25px;
+  max-width: 800px;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  line-height: 1.6;
+  margin: 30px auto; /* 상하 마진 + 가운데 정렬 */
+  max-width: 700px; /* 최대 너비 설정 */
+}
+.description strong {
+  color: #2e7d32;
+}
+
+.score-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
